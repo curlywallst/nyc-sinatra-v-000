@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+
+  <p>Figure Name: <%=@figure.name%></p>
+
+  <%@figure.titles.each do |title| %>
+    <p>Title Name: <%=title.name%></p>
+  <%end%>
+
+  <%@landmarks.each do |landmark| %>
+    <p>Landmark Name: <%=landmark.name%></p>
+    <p>Year Completed: <%=landmark.year_completed%></p>
+  <%end%>
+
+
+
+</html>
